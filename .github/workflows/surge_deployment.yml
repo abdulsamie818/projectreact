@@ -21,7 +21,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Install Node.js
+      
+    - name: Install NodeJS
       uses: actions/setup-node@v2-beta
       with:
              node-version: 12
@@ -37,6 +38,6 @@ jobs:
       run: npm install --global surge
         
     - name: Deploy to Surge
-      run: surge ./build projectreact_1.surge.sh ${{ secters.SURGE_TOKEN }}
+      run: surge ./build projectreact_bootcamp.surge.sh --token ${{ secters.SURGE_TOKEN }}
           
    
