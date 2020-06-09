@@ -9,8 +9,8 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
-  <div><App name="Abdul Samie" age={25}/></div>,
-
+  <div><App name="Abdul Samie" age={25} /></div>,
+  
   document.getElementById('root')
 );
 
